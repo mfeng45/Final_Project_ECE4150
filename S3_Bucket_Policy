@@ -1,0 +1,16 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+           "Sid": "AllAccess",
+	   "Effect": "Allow",
+	   "Principal": "*",
+	   "Action": "S3:*", 
+	   "Resource":[
+		"arn:aws:s3:::spark-project-demo-bucket3",
+		"arn:aws:s3:::spark-project-demo-bucket3/*",
+		"arn:aws:s3:::spark-project-demo-bucket3/data-source/*"
+	   ] 
+        }
+    ]
+}
